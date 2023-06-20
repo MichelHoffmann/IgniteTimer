@@ -5,5 +5,9 @@ interface ButtonProps {
 }
 
 export function Button({ variant = "primary" }: ButtonProps) {
-  return <ButtonContainer variant={variant}>Enviar</ButtonContainer>;
+  return (
+    <ButtonContainer variant={variant}>
+      Mudei só pra poder commitar
+    </ButtonContainer>
+  );
 }
