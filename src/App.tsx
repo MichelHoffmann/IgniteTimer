@@ -1,12 +1,16 @@
 import { Button } from "./components/Button";
 
+import { ThemeProvider } from 'styled-components'
+import { defaltTheme } from "./styles/themes/default";
+
 export function App() {
   return (
-    <>
-      <Button variant="primary"/>
-      <Button variant="secondary"/>
-      <Button variant="danger"/>
-      <Button variant="success"/>
-    </>
+    <ThemeProvider theme={defaltTheme}>
+      <Button variant="primary" />
+      <Button variant="secondary" />
+      <Button variant="success" />
+      <Button variant="danger" />
+      <Button />
+    </ThemeProvider>
   );
 }
