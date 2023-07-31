@@ -83,6 +83,7 @@ export const Separator = styled.div`
   display: flex;
   justify-content: center;
 `
+
 export const StartCountDownButton = styled.button`
   width: 100%;
   border: 0;
